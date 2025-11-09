@@ -73,6 +73,85 @@ nav[aria-label="Filtros por categoría"] .btn {
   padding: 0.5rem 1.25rem;
 }
 
+/* ==== Sección Beneficios y Pasos ==== */
+.beneficios-pasos {
+  background: #f8f9fa; /* Fondo suave */
+}
+
+.beneficios-pasos .card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.beneficios-pasos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-pasos h2 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+.beneficios-pasos ul li,
+.beneficios-pasos ol li {
+  line-height: 1.6;
+}
+
+.beneficios-pasos strong {
+  color: #212529;
+}
+
+.beneficios-pasos i {
+  font-size: 1.1rem;
+}
+
+/* === Listas de pasos === */
+.lista-pasos {
+  counter-reset: pasos;
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-pasos > li {
+  position: relative;
+  padding-left: 40px;
+}
+
+.lista-pasos > li::before {
+  counter-increment: pasos;
+  content: counter(pasos);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #198754; /* verde Bootstrap */
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  text-align: center;
+  line-height: 28px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lista-pasos strong {
+  color: #212529;
+  font-size: 1.05rem;
+}
+
+/* Sublista */
+.sublista {
+  list-style-type: disc;
+  margin-left: 1.8rem;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.sublista li {
+  margin-bottom: 4px;
+}
+
 /* ===============================
    Tarjetas de productos
 ================================= */

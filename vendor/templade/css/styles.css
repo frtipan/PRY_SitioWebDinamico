@@ -10856,7 +10856,7 @@ p {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 10rem 0;
   }
 }
 .btn-xl {
@@ -10945,8 +10945,7 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  min-height: 999px; /* puedes ajustar según necesites */
   text-align: center;
   color: #fff;
   background-image: url("/public/img/ropa-deportiva.png");
@@ -10954,7 +10953,13 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente el contenido */
+  
+  
 }
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
