@@ -1,0 +1,151 @@
+  <!-- Bootstrap 5 -->
+  <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link href="../public/css/estilos.css" rel="stylesheet" />
+
+<body>
+
+  <header class="bg-light py-5 text-center">
+    <div class="container py-5">
+      <h1 class="text-uppercase fw-bold">Ofertas Especiales</h1>
+      <p class="lead text-muted">Aprovecha nuestros descuentos exclusivos en productos seleccionados.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Carrusel de ofertas destacadas -->
+    <section aria-label="Ofertas destacadas" class="mb-5 py-lg-0">
+      <div id="carouselOfertas" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active justify-content-center">
+            <img src="../public/img/imagen11.jpg" class="d-block w-25 justify-content-center" alt="Oferta 1">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Descuento 30%</h5>
+              <p>Solo por tiempo limitado</p>
+            </div>
+          </div>
+          <div class="carousel-item active justify-content-center">
+            <img src="../public/img/imagen2.jpg" class="d-block w-25 justify-content-center" alt="Oferta 2">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>A mitad de Precio</h5>
+              <p>Comodidad y estilo para entrenar</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../public/img/imagen7.jpg" class="d-block w-25 justify-content-center" alt="Oferta 3">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>2x1 en estas prendas</h5>
+              <p>Hasta agotar stock</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tabla de precios -->
+    <section aria-label="Resumen de precios" class="mb-5 py-2">
+      <div class="col-lg-10 mx-auto py-lg-0">
+        <h4 class="text-center mb-3">Resumen de Ofertas</h4>
+        <div class="table-responsive">
+          <table class="table table-bordered text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Producto</th>
+                <th>Precio Regular</th>
+                <th>Descuento</th>
+                <th>Precio Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sudadera Deportiva Bicolor Fila</td>
+                <td>$80</td>
+                <td>25%</td>
+                <td>$60</td>
+              </tr>
+              <tr>
+                <td>Short Deportivo para Hombre Unicolor Everlast</td>
+                <td>$65</td>
+                <td>20%</td>
+                <td>$52</td>
+              </tr>
+              <tr>
+                <td>Camiseta Deportiva para Mujer Unicolor Fila</td>
+                <td>$40</td>
+                <td>15%</td>
+                <td>$34</td>
+              </tr>
+            </tbody>
+            <tfoot class="table-light">
+              <tr>
+                <td colspan="4">Precios válidos hasta el 30 de noviembre</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<section class="beneficios-pasos py-lg-0" aria-label="Beneficios y pasos">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card cuadro-info p-4 shadow-sm">
+          <div class="row gy-5">
+
+            <div class="col-md-6">
+              <h5 class="fw-bold text-primary text-center mb-4">Ventajas principales</h5>
+              <ul class="list-unstyled px-3">
+                <li class="mb-3">Envío gratuito
+                  <ul class="ms-3 mt-2">
+                    <li>Aplica en compras mayores a $50</li>
+                    <li>Disponible en todo el país</li>
+                  </ul>
+                </li>
+                <li class="mb-3">Garantía extendida
+                  <ul class="ms-3 mt-2">
+                    <li>Hasta 12 meses en productos seleccionados</li>
+                  </ul>
+                </li>
+                <li class="mb-3">Atención personalizada</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h5 class="fw-bold text-success text-center mb-4">Pasos para aprovechar las ofertas</h5>
+              <ol class="px-3">
+                <li class="mb-3">Explora los productos
+                  <ol class="ms-3 mt-2">
+                    <li>Filtra por categoría</li>
+                    <li>Revisa especificaciones</li>
+                  </ol>
+                </li>
+                <li class="mb-3">Elige tu prenda favorita</li>
+                <li class="mb-3">Realiza tu compra</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+</body>

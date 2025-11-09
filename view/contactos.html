@@ -1,0 +1,112 @@
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+
+<!-- Contacto -->
+ 
+<section class="page-section" id="contact">
+  <div class="container">
+    <header class="text-center mb-4">
+      <h2 class="section-heading text-uppercase">Contáctanos</h2>
+      <h3 class="section-subheading text-white">Completa el formulario para más información</h3>
+    </header>
+
+    <main>
+      <form id="contactForm" method="get" action="../server.html">
+        <div class="row align-items-stretch mb-5">
+          <div class="col-md-6">
+            <article class="form-group">
+              <label for="name" class="text-white">Nombre completo:</label>
+              <input class="form-control" 
+              id="name" 
+              name="name" 
+              type="text" 
+              required 
+              minlength="1" 
+              maxlength="10" 
+              pattern="[A-Za-z]{1,10}" />
+            </article>
+
+            <article class="form-group">
+              <label for="email" class="text-white">Correo electrónico:</label>
+              <input class="form-control" 
+              id="email" 
+              name="email" 
+              type="email" 
+              required />
+            </article>
+
+       <article class="form-group">
+  <label for="phone" class="text-white">Celular:</label>
+  <input
+    class="form-control"
+    id="phone"
+    name="phone"
+    type="tel"
+    required
+    pattern="^[0-9]{10}$"
+    minlength="10"
+    maxlength="10"
+    
+  />
+</article>
+
+
+            <article class="form-group">
+              <label for="password" class="text-white">Contraseña:</label>
+              <input class="form-control" id="password" name="password" type="password" required minlength="6" maxlength="20"  />
+            </article>
+
+            <article class="form-group">
+              <label for="age" class="text-white">Edad:</label>
+              <input class="form-control" 
+              id="age" name="age" 
+              type="number" 
+              min="1" 
+              max="70" 
+              required />
+            </article>
+
+            <article class="mb-3">
+                <label for="category" class="form-label text-white fw-bold">Categoría de interés:</label>
+                <select class="form-select" id="category" name="category" required>
+                    <option value="mujeres">Mujeres</option>
+                    <option value="hombres">Hombres</option>
+                </select>
+            </article>
+
+          </div>
+
+          <div class="col-md-6">
+            <article class="form-group">
+              <label for="message" class="text-white">Mensaje:</label>
+              <textarea class="form-control" id="message" name="message" rows="12" placeholder="Escribe tu mensaje aquí..." required minlength="5" maxlength="5000"></textarea>
+            </article>
+          </div>
+        </div>
+
+        
+
+        <aside id="formFeedback" class="text-center mb-3 d-none">
+
+        </aside>
+
+        <footer class="text-center">
+          <button class="btn btn-primary btn-xl text-uppercase" type="submit">
+            <i class="fas fa-paper-plane"></i> Enviar 
+          </button>
+          <button class="btn btn-secondary btn-xl text-uppercase" type="reset">
+            <i class="fas fa-eraser"></i> Limpiar
+          </button>
+        </footer>
+      </form>
+    </main>
+  </div>
+</section>
+

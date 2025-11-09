@@ -1,0 +1,236 @@
+/* ===============================
+   Tipografía y fondo general
+================================= */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* ===============================
+   Encabezado principal
+================================= */
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* ===============================
+   Carrusel de ofertas
+================================= */
+#carouselOfertas {
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-height: 300px;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* ===============================
+   Buscador y filtros
+================================= */
+.input-group input {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.input-group .btn {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+nav[aria-label="Filtros por categoría"] .btn {
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+}
+
+/* ===============================
+   Tarjetas de productos
+================================= */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.card-img-top {
+  border: 4px solid #dee2e6;
+  padding: 0.25rem;
+}
+
+/* ===============================
+   Botones
+================================= */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ===============================
+   Tabla de precios
+================================= */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tfoot td {
+  font-style: italic;
+  background-color: #e9ecef;
+}
+
+/* ===============================
+   Listas ordenadas y no ordenadas
+================================= */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+ul ul, ol ol {
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+section[aria-label="Beneficios y pasos"] {
+  text-align: center;
+}
+
+section[aria-label="Beneficios y pasos"] h5 {
+  margin-bottom: 1rem;
+}
+
+section[aria-label="Beneficios y pasos"] ul,
+section[aria-label="Beneficios y pasos"] ol {
+  text-align: left;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sección beneficios y pasos */
+.beneficios-pasos h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.beneficios-pasos ul,
+.beneficios-pasos ol {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.beneficios-pasos ul ul,
+.beneficios-pasos ol ol {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.beneficios-pasos li {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .beneficios-pasos .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
+.cuadro-info {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem;
+}
+
+.cuadro-info h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cuadro-info ul,
+.cuadro-info ol {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cuadro-info ul ul,
+.cuadro-info ol ol {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.cuadro-info li {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .cuadro-info .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
