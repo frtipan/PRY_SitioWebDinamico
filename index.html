@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="Tienda de ropa deportiva AthletixPro" />
   <meta name="author" content="Fernando" />
   <title>AthletixPro - Ropa Deportiva</title>
-
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css" />
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap" rel="stylesheet" />
-
   <!-- Bootstrap -->
   <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
-
   <!-- Estilos personalizados -->
   <link href="/vendor/templade/css/styles.css" rel="stylesheet" />
 </head>
@@ -66,18 +60,21 @@
         <div class="col-lg-6 mb-3 mb-lg-0">
           <h4 class="fw-bold mb-2">AthletixPro</h4>
           <p class="text-white-50 mb-0 small">
-            Ropa deportiva premium diseñada para superar tus límites con estilo, confort y rendimiento
+            Ropa deportiva premium para superar tus límites con estilo, confort y rendimiento
           </p>
         </div>
 
         <div class="col-lg-6 text-center text-lg-end">
-          <a href="https://www.facebook.com/?locale=es_LA" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Facebook">
+          <a href="https://www.facebook.com/?locale=es_LA" class="btn btn-outline-light btn-sm rounded-circle me-2"
+            aria-label="Facebook">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://x.com/?lang=es" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Twitter">
+          <a href="https://x.com/?lang=es" class="btn btn-outline-light btn-sm rounded-circle me-2"
+            aria-label="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Instagram">
+          <a href="https://www.instagram.com/" class="btn btn-outline-light btn-sm rounded-circle me-2"
+            aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="https://www.youtube.com/" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube">
@@ -104,37 +101,37 @@
 
   <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
- 
-<script>
-function validarYEnviar(event) {
-  const form = document.getElementById('contactForm');
-  
-  
-  if (form.checkValidity()) {
-    
-    const feedback = document.getElementById('formFeedback');
-    feedback.classList.remove('d-none');
-    feedback.innerHTML = '<p class="text-success fw-bold">✅ Datos válidos, cargando...</p>';
-    loadPage(event, '../server.html');
-  } else {
-    
-    form.reportValidity();
-  }
-}
 
-function loadPage(event, url) {
-  event.preventDefault();
-  const main = document.getElementById('main-content');
-  fetch(url)
-    .then(response => response.text())
-    .then(html => main.innerHTML = html)
-    .catch(err => main.innerHTML = `<p class="text-center py-5 text-danger">Error al cargar la página: ${err}</p>`);
-}
+  <script>
+    function validarYEnviar(event) {
+      const form = document.getElementById('contactForm');
 
-loadPage(new Event('load'), './view/home.html');
-</script>
 
-  
+      if (form.checkValidity()) {
+
+        const feedback = document.getElementById('formFeedback');
+        feedback.classList.remove('d-none');
+        feedback.innerHTML = '<p class="text-success fw-bold">✅ Datos válidos, cargando...</p>';
+        loadPage(event, '../server.html');
+      } else {
+
+        form.reportValidity();
+      }
+    }
+
+    function loadPage(event, url) {
+      event.preventDefault();
+      const main = document.getElementById('main-content');
+      fetch(url)
+        .then(response => response.text())
+        .then(html => main.innerHTML = html)
+        .catch(err => main.innerHTML = `<p class="text-center py-5 text-danger">Error al cargar la página: ${err}</p>`);
+    }
+
+    loadPage(new Event('load'), './view/home.html');
+  </script>
+
+
 
 </body>
 

@@ -1,59 +1,57 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/public/img/ropa-deportiva.png') center/cover no-repeat fixed;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('/public/img/ropa-deportiva.png') center/cover no-repeat fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
-/* 💎 Tarjeta con más transparencia */
 .glass-card {
-  background: transparent; /* Mucho más transparente */
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  border-radius: 1.5rem;
-  backdrop-filter: blur(8px) saturate(120%);
-  -webkit-backdrop-filter: blur(8px) saturate(120%);
-  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1),
-              0 6px 40px rgba(0, 0, 0, 0.4); /* Sombra suave + brillo leve */
-  transition: all 0.3s ease;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1),
+        0 6px 40px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 45px rgba(255, 255, 255, 0.15),
-              0 10px 50px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 45px rgba(255, 255, 255, 0.15),
+        0 10px 50px rgba(0, 0, 0, 0.5);
 }
 
-/* 💚 Texto con mejor contraste */
 .glass-card h1 {
-  font-weight: 700;
-  color: #00ff99;
+    font-weight: 700;
+    color: #00ff99;
 }
 
 .glass-card p {
-  color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
-/* 🔵 Botón degradado moderno */
+
 .btn-gradient {
-  background: linear-gradient(135deg, #00b4d8, #007bff);
-  border: none;
-  color: #fff;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+    background: linear-gradient(135deg, #00b4d8, #007bff);
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #0096c7, #0056b3);
-  box-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
-  transform: scale(1.06);
+    background: linear-gradient(135deg, #0096c7, #0056b3);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.7);
+    transform: scale(1.06);
 }
 
 .btn-gradient i {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .btn-gradient:hover i {
-  transform: translateX(-5px);
+    transform: translateX(-5px);
 }
