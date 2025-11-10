@@ -104,27 +104,24 @@
 
   <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Script de carga dinámica -->
+ 
 <script>
 function validarYEnviar(event) {
   const form = document.getElementById('contactForm');
   
-  // Si el formulario es válido
+  
   if (form.checkValidity()) {
-    // Mostrar retroalimentación visual
+    
     const feedback = document.getElementById('formFeedback');
     feedback.classList.remove('d-none');
     feedback.innerHTML = '<p class="text-success fw-bold">✅ Datos válidos, cargando...</p>';
-
-    // Llama a tu función loadPage con la ruta de destino
     loadPage(event, '../server.html');
   } else {
-    // Si hay errores, muestra los mensajes del navegador
+    
     form.reportValidity();
   }
 }
 
-// Tu función original de carga dinámica
 function loadPage(event, url) {
   event.preventDefault();
   const main = document.getElementById('main-content');
@@ -134,7 +131,6 @@ function loadPage(event, url) {
     .catch(err => main.innerHTML = `<p class="text-center py-5 text-danger">Error al cargar la página: ${err}</p>`);
 }
 
-// Carga inicial
 loadPage(new Event('load'), './view/home.html');
 </script>
 
