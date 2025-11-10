@@ -635,7 +635,7 @@ progress {
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
+  width: 90%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -10946,7 +10946,7 @@ p {
   }
 }
 header.masthead {
-  min-height: 99px; /* puedes ajustar según necesites */
+  min-height: 500px; /* puedes ajustar según necesites */
   text-align: center;
   color: #fff;
   background-image: url("/public/img/ropa-deportiva.png");
