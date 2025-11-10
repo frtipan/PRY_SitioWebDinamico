@@ -1,112 +1,98 @@
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <!-- Core theme CSS (includes Bootstrap)-->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+
+<!-- Bootstrap CSS -->
+<link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
 
 <!-- Contacto -->
- 
 <section class="page-section" id="contact">
   <div class="container">
-    <header class="text-center mb-4">
+    <header class="text-center mb-4 py-2">
       <h2 class="section-heading text-uppercase">Contáctanos</h2>
       <h3 class="section-subheading text-white">Completa el formulario para más información</h3>
     </header>
 
     <main>
-      <form id="contactForm" method="get" action="../server.html">
-        <div class="row align-items-stretch mb-5">
+      <form id="contactForm" method="get" action="../server.html" novalidate>
+        <div class="row align-items-stretch py-lg-0 mb-5">
           <div class="col-md-6">
             <article class="form-group">
-              <label for="name" class="text-white">Nombre completo:</label>
-              <input class="form-control" 
-              id="name" 
-              name="name" 
-              type="text" 
-              required 
-              minlength="1" 
-              maxlength="10" 
-              pattern="[A-Za-z]{1,10}" />
+              <label for="name" class="text-white">Nombre:</label>
+              <input class="form-control" id="name" name="name" type="text" required minlength="4" maxlength="15"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{1,15}" />
             </article>
 
             <article class="form-group">
               <label for="email" class="text-white">Correo electrónico:</label>
-              <input class="form-control" 
-              id="email" 
-              name="email" 
-              type="email" 
-              required />
+              <input class="form-control" id="email" name="email" type="email" required />
             </article>
 
-       <article class="form-group">
-  <label for="phone" class="text-white">Celular:</label>
-  <input
-    class="form-control"
-    id="phone"
-    name="phone"
-    type="tel"
-    required
-    pattern="^[0-9]{10}$"
-    minlength="10"
-    maxlength="10"
-    
-  />
-</article>
-
+            <article class="form-group">
+              <label for="phone" class="text-white">Celular:</label>
+              <input class="form-control" id="phone" name="phone" type="tel" required pattern="^[0-9]{10}$"
+                minlength="10" maxlength="10" />
+            </article>
 
             <article class="form-group">
               <label for="password" class="text-white">Contraseña:</label>
-              <input class="form-control" id="password" name="password" type="password" required minlength="6" maxlength="20"  />
+              <input class="form-control" id="password" name="password" type="password" required minlength="6"
+                maxlength="20" />
             </article>
 
             <article class="form-group">
               <label for="age" class="text-white">Edad:</label>
-              <input class="form-control" 
-              id="age" name="age" 
-              type="number" 
-              min="1" 
-              max="70" 
-              required />
+              <input class="form-control" id="age" name="age" type="number" min="1" max="70" required />
             </article>
 
             <article class="mb-3">
-                <label for="category" class="form-label text-white fw-bold">Categoría de interés:</label>
-                <select class="form-select" id="category" name="category" required>
-                    <option value="mujeres">Mujeres</option>
-                    <option value="hombres">Hombres</option>
-                </select>
+              <label for="category" class="form-label text-white fw-bold">Categoría de interés:</label>
+              <select class="form-select" id="category" name="category" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="mujeres">Mujeres</option>
+                <option value="hombres">Hombres</option>
+              </select>
             </article>
-
           </div>
 
           <div class="col-md-6">
             <article class="form-group">
               <label for="message" class="text-white">Mensaje:</label>
-              <textarea class="form-control" id="message" name="message" rows="12" placeholder="Escribe tu mensaje aquí..." required minlength="5" maxlength="5000"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="12"
+                placeholder="Escribe tu mensaje aquí..." required minlength="5" maxlength="5000"></textarea>
             </article>
           </div>
         </div>
 
-        
+        <aside id="formFeedback" class="text-center mb-3 d-none"></aside>
 
-        <aside id="formFeedback" class="text-center mb-3 d-none">
+        <footer class="text-center mt-5">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <!-- Botón principal: Enviar -->
+            <button 
+              class="btn btn-primary text-uppercase fw-bold px-5 py-3 shadow-lg border-0 rounded-pill" 
+              type="button" 
+              onclick="validarYEnviar(event)">
+              <i class="fas fa-paper-plane me-2"></i> Enviar
+            </button>
 
-        </aside>
+            <!-- Botón secundario: Limpiar -->
+            <button 
+              class="btn btn-outline-secondary text-uppercase fw-bold px-5 py-3 shadow-sm rounded-pill" 
+              type="reset">
+              <i class="fas fa-eraser me-2"></i> Limpiar
+            </button>
+          </div>
 
-        <footer class="text-center">
-          <button class="btn btn-primary btn-xl text-uppercase" type="submit">
-            <i class="fas fa-paper-plane"></i> Enviar 
-          </button>
-          <button class="btn btn-secondary btn-xl text-uppercase" type="reset">
-            <i class="fas fa-eraser"></i> Limpiar
-          </button>
+          <p class="text-muted mt-4 mb-0 small">Tu rendimiento empieza con un solo clic ⚡</p>
         </footer>
       </form>
     </main>
   </div>
 </section>
-

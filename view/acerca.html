@@ -1,33 +1,47 @@
-<!-- Bootstrap 5 -->
-<link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./vendor/template/assets/favicon.ico" />
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@100;300;400;700&display=swap"
-  rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
 
-<!-- Estilos personalizados -->
-<link href="../vendor/templade/css/styles.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@100;300;400;700&display=swap"
+    rel="stylesheet">
 
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../vendor/templade/css/styles.css">
+</head>
 
 <body>
 
- 
-  <section id="video-promocional" class="py-5 mt-5 text-black">
+  
+  <section id="sobre-nosotros" class="py-5 bg-light">
+    <div class="container text-center py-5">
+      <h2 class="text-uppercase fw-bold mb-4">Sobre Nosotros</h2>
+      <p class="lead text-muted w-75 mx-auto">
+        En ATHLETIXPRO, creemos que el deporte no es solo movimiento: es actitud, bienestar y pasión.
+        Ropa deportiva de las mejores marcas, al alcance de todos.
+      </p>
+    </div>
+  </section>
+
+  
+  <section id="video-promocional" class="py-lg-0 text-black bg-white">
     <div class="container">
-      <header class="text-center mb-4">
+      <header class="text-center mb-4 py-lg-0">
         <h2 class="text-uppercase fw-bold">Mira nuestros productos</h2>
         <p class="lead">Conoce la energía de ATHLETIXPRO en acción</p>
       </header>
 
       <aside class="row justify-content-center">
         <div class="col-md-10">
-          <div class="ratio ratio-16x9">
+          <div class="ratio ratio-16x9 shadow">
             <video controls muted poster="../public/img/istockphoto-1133784805-612x612.jpg">
-              <source src="/public/video/Download.mp4" type="video/mp4">
+              <source src="/public/video/video.mp4" type="video/mp4">
               Tu navegador no soporta el elemento <code>video</code>.
             </video>
           </div>
@@ -36,11 +50,12 @@
     </div>
   </section>
 
+  <!-- SERVICIOS -->
   <section id="servicios" class="py-5 bg-light">
     <div class="container">
       <header class="text-center mb-5">
-        <h1 class="text-uppercase fw-bold">Servicios</h1>
-        <p class="lead text-muted">Soluciones digitales para tu tienda de ropa deportiva.</p>
+        <h2 class="text-uppercase fw-bold">Servicios</h2>
+        <p class="lead text-muted">Ofrecemos servicios de calidad</p>
       </header>
 
       <main>
@@ -50,8 +65,8 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </div>
-            <h2 class="h5">E-Commerce</h2>
-            <p class="text-muted">Plataforma de ventas online con integración de múltiples marcas deportivas.</p>
+            <h4 class="fw-bold">E-Commerce</h4>
+            <p class="text-muted">Plataforma de ventas de múltiples marcas deportivas</p>
           </article>
 
           <article class="col-md-4 text-center">
@@ -59,8 +74,8 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </div>
-            <h2 class="h5">Diseño Responsivo</h2>
-            <p class="text-muted">Tu tienda se adapta perfectamente a móviles, tablets y escritorios.</p>
+            <h4 class="fw-bold">Diseño Responsivo</h4>
+            <p class="text-muted">Se adapta perfectamente a móviles, tablets y escritorios</p>
           </article>
 
           <article class="col-md-4 text-center">
@@ -68,32 +83,82 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
             </div>
-            <h2 class="h5">Seguridad Web</h2>
-            <p class="text-muted">Protección avanzada para transacciones y datos de clientes</p>
+            <h4 class="fw-bold">Seguridad Web</h4>
+            <p class="text-muted">Protección avanzada para nuestros clientes frecuentes</p>
           </article>
         </div>
       </main>
     </div>
   </section>
 
-  <section id="audio-corporativo" class="py-5 bg-white">
+  
+  <section id="productos" class="py-5 bg-white">
     <div class="container">
-      <header class="text-center mb-4">
-        <h2 class="text-uppercase fw-bold">Escucha nuestro negocio</h2>
-        <p class="lead text-muted">Escucha nuestra identidad de negocio</p>
+      <header class="text-center mb-5">
+        <h2 class="text-uppercase fw-bold">Nuestros Productos</h2>
+        <p class="lead text-muted">Descubre nuestra línea de ropa deportiva</p>
       </header>
 
-      <aside class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="text-center">
-            <audio controls class="w-100">
-              <source src="/public/audio/ttsmaker-file-2025-11-8-0-20-11.mp3" type="audio/mpeg">
-              Tu navegador no soporta el elemento <code>audio</code>.
-            </audio>
+      <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active text-center">
+            <img src="../public/img/imagen11.jpg" class="d-block mx-auto w-25 rounded shadow" alt="Producto 1">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded py-2">
+              <h5>Colección Running</h5>
+              <p>Ligereza y transpirabilidad para tus entrenamientos</p>
+            </div>
+          </div>
+
+          <div class="carousel-item text-center">
+            <img src="../public/img/imagen2.jpg" class="d-block mx-auto w-25 rounded shadow" alt="Producto 2">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded py-2">
+              <h5>Fitness Premium</h5>
+              <p>Estilo, confort y tecnología textil avanzada</p>
+            </div>
+          </div>
+
+          <div class="carousel-item text-center">
+            <img src="../public/img/imagen7.jpg" class="d-block mx-auto w-25 rounded shadow" alt="Producto 3">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded py-2">
+              <h5>Entrenamiento Pro</h5>
+              <p>Diseño ergonómico y resistencia</p>
+            </div>
           </div>
         </div>
-      </aside>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        <div class="carousel-indicators mt-4">
+          <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="0" class="active" aria-label="1"></button>
+          <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="1" aria-label="2"></button>
+          <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="2" aria-label="3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audio-corporativo" class="py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="text-uppercase fw-bold mb-4">Escucha nuestro negocio</h2>
+      <p class="lead text-muted">Siente la identidad de nuestra tienda</p>
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+          <audio controls class="w-100 shadow">
+            <source src="/public/audio/ttsmaker-file-2025-11-8-0-20-11.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento <code>audio</code>.
+          </audio>
+        </div>
+      </div>
     </div>
   </section>
 
 </body>
+

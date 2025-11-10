@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enviado - AthletixPro</title>
 
-         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <link href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../vendor/templade/css/styles.css" rel="stylesheet" />
-</head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./vendor/templade/assets/favicon.ico" />
 
-  <div class="card text-center p-5 shadow-lg rounded-4" style="max-width: 400px;">
-    <div class="card-body">
-      <div class="mb-4">
-        <i class="fas fa-check-circle text-success fa-5x"></i>
-      </div>
-      <h1 class="text-success mb-3">¡Enviado con éxito!</h1>
-      <p class="text-muted mb-0">Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>
-    </div>
-  </div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./public/font/fontawesome-free-6.7.2-web/css/all.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/public/css/estilo1.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+
+  <header class="text-center mb-4">
+    <h1 class="visually-hidden">AthletixPro - Confirmación de envío</h1>
+  </header>
+
+  <main>
+    <section class="container">
+      <article class="glass-card text-center p-5 mx-3 mx-md-auto shadow-lg" role="alert" aria-live="assertive">
+        <header class="mb-4">
+          <i class="fas fa-check-circle fa-5x text-success" aria-hidden="true"></i>
+        </header>
+
+        <h2 class="mb-3 fw-bold">¡Enviado con éxito!</h2>
+        <p class="lead mb-4">Gracias por contactarnos</p>
+        <p class="lead mb-4">Nos pondremos en contacto contigo pronto</p>
+        <p class="lead mb-4">Sigue explorando nuestros demas productos</p>
+      </article>
+    </section>
+  </main>
+
 </body>
+
 </html>
